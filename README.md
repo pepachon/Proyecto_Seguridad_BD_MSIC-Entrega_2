@@ -111,34 +111,34 @@ En las siguientes imaganes se presentan las actividades de aseguramiento realiza
 
 Numeral 4.2.1
 
-[4.2.1](./PRIP1/4-2-1.PNG)
+![4.2.1](./PRIP1/4-2-1.PNG)
 
 Numeral 4.2.2
 
-[4.2.2](./PRIP1/4-2-2.PNG)
+![4.2.2](./PRIP1/4-2-2.PNG)
 
 Numeral 4.2.3
 
-[4.2.3](./PRIP1/4-2-3.PNG)
+![4.2.3](./PRIP1/4-2-3.PNG)
 
 Numeral 4.2.4
 
-[4.2.4](./PRIP1/4-2-4.PNG)
+![4.2.4](./PRIP1/4-2-4.PNG)
 
 Numeral 4.2.6
 
-[4.2.6](./PRIP1/4-2-6.PNG)
+![4.2.6](./PRIP1/4-2-6.PNG)
 
 Numeral 4.2.7
 
-[4.2.7](./PRIP1/4-2-7.PNG)
+![4.2.7](./PRIP1/4-2-7.PNG)
 
 Numeral 8.1
 
-[8.1](./PRIP1/4-2-1.PNG)
+![8.1](./PRIP1/8-1.PNG)
 
 Adicionalmente, las siguientes imaganes se presentan las actividades de aseguramiento realizadas de acuerdo a la [guía CIS de SQL Server 2016](./PRIP1/CIS_Microsoft_SQL_Server_2016_Benchmark_v1.0.0.pdf):
 
 Numeral 2.1
 
-[2.1](./PRIP1/2-1.PNG)
+![2.1](./PRIP1/2-1.PNG)
