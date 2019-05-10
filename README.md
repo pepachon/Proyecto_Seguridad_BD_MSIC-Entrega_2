@@ -38,7 +38,7 @@ Muestra.
 
 ## 5. Identidades y credenciales (PR.AC-1)
 
-Muestra.
+El metodo de autenticación usado para los usuarios será el propio de la base de datos
 
 ## 6. Gestión de permisos (PR.AC-4)
 
