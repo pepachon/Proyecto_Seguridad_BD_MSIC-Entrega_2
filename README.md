@@ -103,7 +103,21 @@ Muestra.
 
 ## 10. Mantener la disponibilidad (PR.DS-4)
 
-Muestra.
+En busca de mantener la disponibilidad se realiza el monitoreo de los recursos usados por el equipo de la base de datos, en la siguiente imagen se presenta el monitoreo del promedio de consumo de recursos de la CPU de la base datos en los últimos 7 días:
+
+![CPU](./PRDS4/Captura1.png)
+
+A continuación se observa el monitoreo del promedio de consumo de disco de la base datos en los últimos 7 días:
+
+![Disco](./PRDS4/Captura2.png)
+
+Además, se presenta el promedio de iniciós de sesión en la base de datos "proyecto":
+
+![Sesion](./PRDS4/Captura3.png)
+
+Finalmente, se presenta el consumo de CPU de la última semana producto de la ejecución consultas o la entrada y salida de registros:
+
+![CPU_2](./PRDS4/Captura4.png)
 
 ## 11. Linea base (PR.IP-1)
 
