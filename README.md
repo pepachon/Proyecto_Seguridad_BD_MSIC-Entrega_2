@@ -64,9 +64,18 @@ Basados en el análisis de riesgo realizado en la fase I del proyecto y la tende
 
 Se realizo una evalucion de impacto para el negocio, ante la indisponibilidad de los datos de la BD y se definieron los tiempos maximos de recuperacion (RTO) y el punto maximo de recuperacion objetivo (RPO):
 
-![Metodologia](./IDRA4/Metodologia_BIA.png)
-![Metodologia](./IDRA4/RTO.png)
-![Metodologia](./IDRA4/RPO.png)
+  METODOLOGIA
+
+   ![Metodologia](./IDRA4/Metodologia_BIA.png)
+
+  TIEMPO OBJETIVO DE RECUPERACIÓN
+
+   ![RTO_1](./IDRA4/RTO_1.png)
+   ![RTO_2](./IDRA4/RTO_2.png)
+
+  PUNTO OBJETIVO DE RECUPERACIÓN
+
+   ![Metodologia](./IDRA4/RPO.png)
 
 ## 5. Identidades y credenciales (PR.AC-1)
 
