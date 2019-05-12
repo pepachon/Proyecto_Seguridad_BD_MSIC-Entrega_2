@@ -57,7 +57,7 @@ En la siguiente imagen se observan las vulnerabilidades más críticas y las act
 Fuente: https://www.cisco.com/c/dam/global/es_mx/solutions/pdf/reporte-anual-cisco-2018-espan.pdf, tomado 08 mayo de 2019.
 
 
-Basados en el análisis de riesgo realziado en la fase I del proyecto, se puede establecer que estas tendencias no representan un riesgo alto para la Base de datos de Salud Capital.
+Basados en el análisis de riesgo realizado en la fase I del proyecto y la tendencia de amenazas, se  observa que no existe un riesgo alto de explotación de vulnerabilidades de la Base de datos de Salud Capital.
 
 
 ## 4. Impacto potencial (ID.RA-4)
