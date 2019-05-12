@@ -22,15 +22,43 @@ Proyecto aplicacion controles framework de ciberseguridad de la NIST entrega 2
 
 ## 1. Identificación de vulnerabilidades (ID.RA-1)
 
-Muestra.
+En el escaneo de red realizado se evidencio que se encontraba habilitado el servicio de SQL server 2014 en el puerto 1433.
+<img src="/ID-RA1-2-3/scan_nmap.png" />
+
+El escaneo y análisis de vulnerabilidades se realizó por medio de la herramienta Nessus Professional con plugins actualizados al día 08 de mayo de 2019, a continuación se relacionan las vulnerabilidades que fueron encontradas.
+<img src="/ID-RA1-2-3/analis_vuln2.JPG" />
+
 
 ## 2. Ciberamenazas (ID.RA-2)
 
-Muestra.
+A continuación se listan las ciberamenazas publicadas por el CVE (Common Vulnerability Exposure) para el servicio detectado “Microsoft SQL server 2014”.
+<img src="/ID-RA1-2-3/vuln_con.png" />
+Fuente: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Microsoft+SQL+Server+2014, tomado 08 mayo de 2019
+
+Microsoft publicó varios artículos  que contienen información sobre problemas conocidos. 
+•	Existen vulnerabilidades en SQL Server que podrían permitir la elevación de privilegios: 12 de agosto de 2014. 
+•	MS15-058: Algunas vulnerabilidades de SQL Server permiten la ejecución remota de código: 14 de julio de 2015. 
+
+  Tomado https://support.microsoft.com/es-co/help/2984340/ms14-044-vulnerabilities-in-sql-server-could-allow-elevation-of-privil, tomado 08 mayo de 2019.
+  https://support.microsoft.com/es-co/help/3065718/ms15-058-vulnerabilities-in-sql-server-could-allow-remote-code-executi, tomado 08 mayo de 2019.
+
+
+
 
 ## 3. Identificación de amenazas (ID.RA-3)
 
-Muestra.
+A continuación se observa la tendencia de las amenazas que fueron tendencia en 2018 según el reporte anual de seguridad de Cisco.
+<img src="/ID-RA1-2-3/trend1.png" />
+Fuente: https://www.cisco.com/c/dam/global/es_mx/solutions/pdf/reporte-anual-cisco-2018-espan.pdf, tomado 08 mayo de 2019.
+
+En la siguiente imagen se observan las vulnerabilidades más críticas y las actividades de ataque presentadas.
+
+<img src="/ID-RA1-2-3/trend2.png" />
+Fuente: https://www.cisco.com/c/dam/global/es_mx/solutions/pdf/reporte-anual-cisco-2018-espan.pdf, tomado 08 mayo de 2019.
+
+
+Basados en el análisis de riesgo realziado en la fase I del proyecto, se puede establecer que estas tendencias no representan un riesgo alto para la Base de datos de Salud Capital.
+
 
 ## 4. Impacto potencial (ID.RA-4)
 
