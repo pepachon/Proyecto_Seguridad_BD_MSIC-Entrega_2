@@ -62,7 +62,11 @@ Basados en el análisis de riesgo realizado en la fase I del proyecto y la tende
 
 ## 4. Impacto potencial (ID.RA-4)
 
-Muestra.
+Se realizo una evalucion de impacto para el negocio, ante la indisponibilidad de los datos de la BD y se definieron los tiempos maximos de recuperacion (RTO) y el punto maximo de recuperacion objetivo (RPO):
+
+![Metodologia](./IDRA4/Metodologia_BIA.png)
+![Metodologia](./IDRA4/RTO.png)
+![Metodologia](./IDRA4/RPO.png)
 
 ## 5. Identidades y credenciales (PR.AC-1)
 
@@ -126,8 +130,14 @@ Adicionalmente, se realizó la verificación de soporte SSL/TLS soportado por el
 
 
 ## 9. Ciclo de vida de activos (PR.DS-3)
+Se definieron los siguiente flujos de proceso para la proteccion de las bases de datos en su ciclo de vida:
 
-Muestra.
+![creacion](./PRDS3/Creacion_BD.png)
+![migracion](./PRDS3/Migracion_BD.png)
+![archivo](./PRDS3/Archivo_BD.png)
+![backups](./PRDS3/Backups_BD.png)
+![mantenimiento](./PRDS3/Mantenimiento_BD.png)
+![borrado](./PRDS3/Borrado_BD.png)
 
 ## 10. Mantener la disponibilidad (PR.DS-4)
 
