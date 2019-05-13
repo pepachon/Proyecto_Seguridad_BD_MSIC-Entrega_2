@@ -1,7 +1,8 @@
 
 # Proyecto de Seguridad en Bases de Datos Entrega 2
-Proyecto aplicacion controles framework de ciberseguridad de la NIST entrega 2
+Proyecto aplicación controles framework de ciberseguridad de la NIST entrega 2
 
+[![](http://img.youtube.com/vi/ZG6cjWLpQVE/0.jpg)](http://www.youtube.com/watch?v=ZG6cjWLpQVE "")
 
 ## Tabla de Contenido
 
@@ -12,7 +13,7 @@ Proyecto aplicacion controles framework de ciberseguridad de la NIST entrega 2
 * [5. Identidades y credenciales (PR.AC-1)](#5-identidades-y-credenciales-prac-1)
 * [6. Gestión de permisos (PR.AC-4)](#6-gestión-de-permisos-prac-4)
 * [7. Protección de datos en reposo (PR.DS-1)](#7-protección-de-datos-en-reposo-prds-1)
-* [8. Datos en transito (PR.DS-2)](#8-datos-en-transito-prds-2)
+* [8. Datos en tránsito (PR.DS-2)](#8-datos-en-transito-prds-2)
 * [9. Ciclo de vida de activos (PR.DS-3)](#9-ciclo-de-vida-de-activos-prds-3)
 * [10. Mantener la disponibilidad (PR.DS-4)](#10-mantener-la-disponibilidad-prds-4)
 * [11. Linea base (PR.IP-1)](#11-linea-base-prip-1)
@@ -25,7 +26,7 @@ Proyecto aplicacion controles framework de ciberseguridad de la NIST entrega 2
 En el escaneo de red realizado se evidencio que se encontraba habilitado el servicio de SQL server 2014 en el puerto 1433.
 <img src="/ID-RA1-2-3/scan_nmap.png" />
 
-El escaneo y análisis de vulnerabilidades se realizó por medio de la herramienta Nessus Professional con plugins actualizados al día 08 de mayo de 2019, a continuación se relacionan las vulnerabilidades que fueron encontradas.
+El escaneo y análisis de vulnerabilidades se realizó por medio de la herramienta Nessus Professional con plugins actualizados al día 08 de mayo de 2019, a continuación, se relacionan las vulnerabilidades que fueron encontradas.
 <img src="/ID-RA1-2-3/analis_vuln2.JPG" />
 
 
@@ -35,7 +36,7 @@ A continuación se listan las ciberamenazas publicadas por el CVE (Common Vulner
 <img src="/ID-RA1-2-3/vuln_con.png" />
 Fuente: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Microsoft+SQL+Server+2014, tomado 08 mayo de 2019
 
-Microsoft publicó varios artículos  que contienen información sobre problemas conocidos. 
+Microsoft publicó varios artículos que contienen información sobre problemas conocidos. 
 •	Existen vulnerabilidades en SQL Server que podrían permitir la elevación de privilegios: 12 de agosto de 2014. 
 •	MS15-058: Algunas vulnerabilidades de SQL Server permiten la ejecución remota de código: 14 de julio de 2015. 
 
@@ -47,7 +48,7 @@ Microsoft publicó varios artículos  que contienen información sobre problemas
 
 ## 3. Identificación de amenazas (ID.RA-3)
 
-A continuación se observa la tendencia de las amenazas que fueron tendencia en 2018 según el reporte anual de seguridad de Cisco.
+A continuación, se observa la tendencia de las amenazas que fueron tendencia en 2018 según el reporte anual de seguridad de Cisco.
 <img src="/ID-RA1-2-3/trend1.png" />
 Fuente: https://www.cisco.com/c/dam/global/es_mx/solutions/pdf/reporte-anual-cisco-2018-espan.pdf, tomado 08 mayo de 2019.
 
@@ -57,7 +58,7 @@ En la siguiente imagen se observan las vulnerabilidades más críticas y las act
 Fuente: https://www.cisco.com/c/dam/global/es_mx/solutions/pdf/reporte-anual-cisco-2018-espan.pdf, tomado 08 mayo de 2019.
 
 
-Basados en el análisis de riesgo realizado en la fase I del proyecto y la tendencia de amenazas, se  observa que no existe un riesgo alto de explotación de vulnerabilidades de la Base de datos de Salud Capital.
+Basados en el análisis de riesgo realizado en la fase I del proyecto y la tendencia de amenazas, se observa que no existe un riesgo alto de explotación de vulnerabilidades de la Base de datos de Salud Capital.
 
 
 ## 4. Impacto potencial (ID.RA-4)
@@ -79,11 +80,47 @@ Se realizo una evalucion de impacto para el negocio, ante la indisponibilidad de
 
 ## 5. Identidades y credenciales (PR.AC-1)
 
-El metodo de autenticación usado para los usuarios será el propio de la base de datos
+El metodo de autenticación usado para los usuarios será el propio de la base de datos los usuarios creados acorde con los [Roles y responsabilidades](https://github.com/pepachon/Proyecto_Seguridad_BD_MSIC-1/blob/Rama_Proyecto/R&R/Readme.md) son:
+
+Rol | Nombre de Usuario | Observación
+:--:|:-----------------:|-------------
+Usuarios | usuario11 | 
+Coordinador de Seguridad | No aplica | No tiene acceso directo a la base de datos, pero puede monitorear los eventos de la base de datos
+Analista de Aplicaciones | analista |
+DBA (Database Administrator) | osanpe |
 
 ## 6. Gestión de permisos (PR.AC-4)
 
-Muestra.
+A continuación, se presentan los usuarios creados y una muestra del cumplimiento del rol de cada uno:
+
+![Rol](./PRAC4/Captura.PNG)
+
+### usuario11
+
+Eliminación fallida usando el usuario
+
+![Rol](./PRAC4/Captura1.PNG)
+
+Consulta exitosa de acuerdo al rol del usuario:
+
+![Rol](./PRAC4/Captura2.PNG)
+
+### analista
+
+Consulta fallida usando el usuario:
+
+![Rol](./PRAC4/Captura3.PNG)
+
+Consulta exitosa de acuerdo al rol del usuario:
+
+![Rol](./PRAC4/Captura4.PNG)
+
+### osanpe
+
+Modificación exitosa usando el usuario DBA:
+
+![Rol](./PRAC4/Captura5.PNG)
+
 
 ## 7. Protección de datos en reposo (PR.DS-1)
 
@@ -97,7 +134,7 @@ En la siguiente imagen se presenta una muestra de los datos antes del proceso de
 
 ![1](./PRDS1/Captura10.PNG)
 
-En las siguientes imagenes se presenta el proceso de cifrado de columnas usando Always Encrypted:
+En las siguientes imágenes se presenta el proceso de cifrado de columnas usando Always Encrypted:
 
 ![2](./PRDS1/Captura.PNG)
 
@@ -115,7 +152,7 @@ En las siguientes imagenes se presenta el proceso de cifrado de columnas usando 
 
 ![8](./PRDS1/Captura3.PNG)
 
-En las siguiente imagenes se observan el cifrado exitoso de columnas:
+En las siguiente imágenes se observan el cifrado exitoso de columnas:
 
 ![9](./PRDS1/Captura8.PNG)
 
@@ -129,7 +166,7 @@ Finalmente, es importante mencionar que las llaves de cifrado son dos "clave mae
 
 ## 8. Datos en transito (PR.DS-2)
 
-Para la protección de datos en transito se establecen dos medidas, la primera de ellas es Always Encrypted la cual es mencionada en el numeral [7. Protección de datos en reposo (PR.DS-1)](#7-protección-de-datos-en-reposo-prds-1) y la segubda es que el intercambio de información a través de VPN tal como lo establece el [flujo de datos de información](https://github.com/pepachon/Proyecto_Seguridad_BD_MSIC-1/blob/Rama_Proyecto/Flujo_datos/Readme.md#flujo-de-datos-de-informaci%C3%B3n). En la siguiente imagen se puede observar la configuración definida para VPN a través del uso de certificado:
+Para la protección de datos en tránsito se establecen dos medidas, la primera de ellas es Always Encrypted la cual es mencionada en el numeral [7. Protección de datos en reposo (PR.DS-1)](#7-protección-de-datos-en-reposo-prds-1) y la segunda es que el intercambio de información a través de VPN tal como lo establece el [flujo de datos de información](https://github.com/pepachon/Proyecto_Seguridad_BD_MSIC-1/blob/Rama_Proyecto/Flujo_datos/Readme.md#flujo-de-datos-de-informaci%C3%B3n). En la siguiente imagen se puede observar la configuración definida para VPN a través del uso de certificado:
 
 ![1](./PRDS2/Captura.png)
 
@@ -139,7 +176,7 @@ Adicionalmente, se realizó la verificación de soporte SSL/TLS soportado por el
 
 
 ## 9. Ciclo de vida de activos (PR.DS-3)
-Se definieron los siguiente flujos de proceso para la proteccion de las bases de datos en su ciclo de vida:
+Se definieron los siguientes flujos de proceso para la protección de las bases de datos en su ciclo de vida:
 
 ![creacion](./PRDS3/Creacion_BD.png)
 ![migracion](./PRDS3/Migracion_BD.png)
@@ -154,7 +191,7 @@ En busca de mantener la disponibilidad se realiza el monitoreo de los recursos u
 
 ![CPU](./PRDS4/Captura1.png)
 
-A continuación se observa el monitoreo del promedio de consumo de disco de la base datos en los últimos 7 días:
+A continuación, se observa el monitoreo del promedio de consumo de disco de la base datos en los últimos 7 días:
 
 ![Disco](./PRDS4/Captura2.png)
 
@@ -198,7 +235,7 @@ Numeral 8.1
 
 ![8.1](./PRIP1/8-1.PNG)
 
-Adicionalmente, las siguientes imaganes se presentan las actividades de aseguramiento realizadas de acuerdo a la [guía CIS de SQL Server 2016](./PRIP1/CIS_Microsoft_SQL_Server_2016_Benchmark_v1.0.0.pdf):
+Adicionalmente, las siguientes imágenes se presentan las actividades de aseguramiento realizadas de acuerdo a la [guía CIS de SQL Server 2016](./PRIP1/CIS_Microsoft_SQL_Server_2016_Benchmark_v1.0.0.pdf):
 
 Numeral 2.1
 
